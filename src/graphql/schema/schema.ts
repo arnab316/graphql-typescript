@@ -14,6 +14,9 @@ export const schema = `#graphql
   getProductByName(name: String!) : Product
 
 }
-
+ type Mutation {
+  addProduct(id:ID ,name: String!, description: String!, price: Float!): Product
+  deleteProduct(id : ID!) : Product
+}
 
 `;
